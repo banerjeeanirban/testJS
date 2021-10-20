@@ -7,6 +7,13 @@ Http.onreadystatechange = (e) => {
 data = {some:thing,another:thing};
 http({method: 'GET', url: '[the-target-url]', headers: {'Authorization': '[your-api-key]'}
 });
+  
+  
+  
+  
+  
+  
+  
 $.ajax({
    type : "GET",
    url : "[the-target-url]",
