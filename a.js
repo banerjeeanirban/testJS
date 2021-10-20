@@ -2,16 +2,18 @@ const Http = new XMLHttpRequest();
 const url='https://jsonplaceholder.typicode.com/posts';
 Http.open("GET", url);
 Http.send();
-Http.onreadystatechange = (e) => {
+Http.onreadystatechange = (e) => 
+  {
   console.log(Http.responseText)
-data = {some:thing,another:thing};
-http({method: 'GET', url: '[the-target-url]', headers: {'Authorization': '[your-api-key]'}
+  data    =   {"some":"thing","another":"thing"};
+  http({method: 'GET', url: '[the-target-url]', headers:   {'Authorization': '[your-api-key]'}
 });
+}
   
   
   
-  
-  
+
+
   
   
 $.ajax({
