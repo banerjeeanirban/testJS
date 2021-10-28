@@ -14,4 +14,23 @@ fetch("https://world.openfoodfacts.org/category/pastas/1.json")
   })
   .catch(error => console.log(error))
 
+async function postData () {
+  const food = {
+    name: "Bread",
+    weight: 450,
+    quantity: 3
+  }
 
+  const response = await fetch("/food", {
+    method: "POST",
+    body: JSON.stringify(food),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+
+  if (!response.ok) {
+    throw new Error(`Request failed with status ${reponse.status}`)
+  }
+  console.log("Request successful!")
+}
