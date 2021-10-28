@@ -2,9 +2,12 @@ axios.get("https://world.openfoodfacts.org/category/pastas/1.json")
   .then(response => {
     // access parsed JSON response data using response.data field
     data = response.data
-    headers: {
+    headers: 
+
+{
    Authorization: 'Bearer ' + token //the token is a variable which holds the token
- }
+ 
+}
     console.log(data.count)
     console.log(data.products)
   })
